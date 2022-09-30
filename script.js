@@ -222,3 +222,17 @@ document.querySelector("svg").addEventListener("click", () => {
         .catch(error => console.log(error))
 })
 rangeDisplay();
+
+
+console.log()
+
+const invitesSoireeFoot=['Tim','Bill']
+let invitesReceptionBusiness = invitesSoireeFoot;
+invitesSoireeFoot.push('Peter');
+invitesReceptionBusiness.push('Sean');
+invitesSoireeFoot.push('Jack');
+
+let regex = new RegExp(/^[0-9]{2}[a-zA-Z]{2}[0-9]{3}$/)
+console.log(regex.test("07DE338"))
+
+console.log(invitesReceptionBusiness)

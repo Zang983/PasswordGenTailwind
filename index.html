@@ -16,11 +16,11 @@
   <title>Frontend Mentor | Password generator app</title>
 </head>
 
-<body class="bg-gradient-to-b from-[#14131B] to-[#08070B] h-screen w-[37.8vw] m-auto text-lg text-[#E6E5EA]">
-  <main class=" flex-column mt-[9.722vw]">
-    <h1 class="text-center mb-[2.64vw] text-2xl text-[#817D92]"> Password Generator</h1>
+<body class="bg-gradient-to-b from-[#14131B] to-[#08070B] h-screen lg:w-[540px] m-auto text-lg text-[#E6E5EA] box-border">
+  <h1 class="text-center lg:mb-[40px] mb-[20px] lg:text-2xl text-[#817D92] lg:mt-[9.722vw] mt-[64px]"> Password Generator</h1>
+  <main class=" flex-column lg:w-[540px] lg:h-[632px] w-[343px] h-[503px] m-auto">
     <div id="password"
-      class="px-[2.22vw] bg-[#24232C] py-[1.944vw] mb-5 items-center flex justify-between text-3xl text-[#817D92]">
+      class="h-[64px] lg:h-[80px] lg:px-[26px] px-[20px] bg-[#24232C] py-[23px] lg:mb-5 mb-[16px] items-center flex justify-between text-3xl text-[#817D92]">
       <span>P4$5W0rD!</span>
       <svg width="21" height="24" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -28,50 +28,49 @@
           fill="#A4FFAF" />
       </svg>
     </div>
-
-    <div id="options" class="px-[2.22vw] py-[2.36vw] bg-[#24232C] flex flex-column flex-wrap">
+    <div id="options" class="lg:px-[26px] px-[20px] lg:h-[528px] py-[20px] lg:py-[28px] bg-[#24232C] flex flex-column flex-wrap">
       <label class="w-full">
         <div id="displayLength">
           <p class="flex justify-between">Character Length <span class="lengthValue text-3xl text-[#A4FFAF]">10</span>
           </p>
         </div>
-        <input type="range" class="w-full h-2 mt-[2.4306vw]" id="size" min="0" max="20" value="10">
+        <input type="range" class="w-full h-2 lg:mt-[36px] mt-[18px]" id="size" min="0" max="20" value="10">
       </label>
-      <label class="mt-[2.43vw] h-[18px] relative w-full">
+      <label class="lg:mt-[36px] mt-[26px] h-[18px] w-full">
         <input type="checkbox" id="uppercase" class="checked:bg-[url('./assets/images/icon-check.svg')] checked:bg-[#A4FFAF] checked:bg-center checked:bg-no-repeat
          appearance-none border border-solid border-[#D8D8D8] w-[18px] h-[18px] ">
         Include Uppercase Letters
       </label>
-      <label class="mt-[1.5972vw] h-[18px] relative w-full">
+      <label class="lg:mt-[24px] mt-[18px] h-[18px] w-full">
 
         <input type="checkbox" id="lowercase" class="checked:bg-[url('./assets/images/icon-check.svg')] checked:bg-[#A4FFAF] checked:bg-center checked:bg-no-repeat
          appearance-none border border-solid border-[#D8D8D8] w-[18px] h-[18px] ">
         Include Lowercase Letters
       </label>
-      <label class="mt-[1.5972vw] h-[18px] relative w-full">
+      <label class="lg:mt-[24px] mt-[18px] h-[18px] w-full">
 
         <input type="checkbox" id="numbers" class="checked:bg-[url('./assets/images/icon-check.svg')] checked:bg-[#A4FFAF] checked:bg-center checked:bg-no-repeat
          appearance-none border border-solid border-[#D8D8D8] w-[18px] h-[18px] ">
         Include Numbers
       </label>
-      <label class="mt-[1.5972vw] h-[18px] w-full relative">
+      <label class="lg:mt-[24px] mt-[18px] h-[18px] w-full">
         <input type="checkbox" id="symbols" class="checked:bg-[url('./assets/images/icon-check.svg')] checked:bg-[#A4FFAF] checked:bg-center checked:bg-no-repeat
          appearance-none border border-solid border-[#D8D8D8] w-[18px] h-[18px] ">
         Include Symbols
       </label>
 
       <div
-        class="flex h-[5vw] flex justify-between bg-[#18171F] w-full items-center py-[1.60vw] px-[2.083vw] mt-[2.4305vw]">
+        class="flex lg:h-[72px] h-[56px] flex justify-between bg-[#18171F] w-full items-center  px-[31.5px] mt-[30px] h:mt-[36.5px]">
         <p class="text-[#817D92] uppercase">Strength</p>
-        <div class="strengthScale flex gap-[0.5556vw] h-[1.9444vw] items-center ">
-          <p id="scoreStrength" class="mr-[1.38884vw] text-2xl uppercase"></p>
-          <div class="w-[0.6944vw]  h-full border-2 border-solid border-[#E6E5EA]"></div>
-          <div class="w-[0.6944vw]  h-full border-2 border-solid border-[#E6E5EA]"></div>
-          <div class="w-[0.6944vw]  h-full border-2 border-solid border-[#E6E5EA]"></div>
-          <div class="w-[0.6944vw]  h-full border-2 border-solid border-[#E6E5EA]"></div>
+        <div class="strengthScale flex gap-[10px] h-[28px] items-center ">
+          <p id="scoreStrength" class="mr-[30px]  text-2xl uppercase"></p>
+          <div class="w-[10px]  h-full border-2 border-solid border-[#E6E5EA]"></div>
+          <div class="w-[10px]  h-full border-2 border-solid border-[#E6E5EA]"></div>
+          <div class="w-[10px]  h-full border-2 border-solid border-[#E6E5EA]"></div>
+          <div class="w-[10px]  h-full border-2 border-solid border-[#E6E5EA]"></div>
         </div>
       </div>
-      <button id="submit" class="group h-[4.514vw] bg-[#A4FFAF] w-full mt-[2.2222vw] text-black flex items-center justify-center
+      <button id="submit" class="group lg:h-[65px] h-[56px] bg-[#A4FFAF] w-full mt-[20px] lg:mt-[34px] text-black flex items-center justify-center
         active:border active:border-[#A4FFAF] active:border-solid active:bg-[#24232C] active:text-[#A4FFAF]">GENERATE
         <svg class="ml-[24px] translate-y-[5px] w-[24px] h-[24px] group-active:fill-[#A4FFAF]"
           xmlns="http://www.w3.org/2000/svg">
